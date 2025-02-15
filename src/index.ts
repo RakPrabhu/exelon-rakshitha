@@ -22,5 +22,20 @@ const testPhoneNumber = process.env.RECIPIENT_PHONE_NUMBER || ''; // Replace wit
   const result = await TwilioService.sendSMS(testPhoneNumber, testMessage);
   console.log('Test Result:', result);
 };
+const testWhatsApp = async () => {
+  const testPhoneNumber = process.env.RECIPIENT_PHONE_NUMBER|| ''; // Replace with your WhatsApp number
+  const testMessage = 'Hello Rakshi wasuppp';
 
+  const result = await TwilioService.sendWhatsApp(testPhoneNumber, testMessage);
+  console.log('WhatsApp Test Result:', result);
+};
+
+async function callUserWithTTS() {
+  const testPhoneNumber = process.env.RECIPIENT_PHONE_NUMBER || ''; // Replace with your real number
+  const testMessage = 'Hello Rakshitha good job ';
+  const response = await TwilioService.makeCall(testPhoneNumber,testMessage);
+  console.log('Call Response:', response);
+}
 testTwilio();
+// testWhatsApp();
+// callUserWithTTS();

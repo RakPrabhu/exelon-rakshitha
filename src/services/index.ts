@@ -4,6 +4,8 @@ const config = {
 
 interface TwilioFunctions {
   sendSMS: (to: string, message: string) => Promise<unknown>;
+  sendWhatsApp: (to: string, message: string) => Promise<unknown>;
+  makeCall: (to: string, message: string) => Promise<unknown>;
 }
 
 // **Dynamically Import & Return Twilio Functions**
