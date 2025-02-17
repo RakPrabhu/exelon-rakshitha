@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Match Details</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f9;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      #matchDetails {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        font-size: 18px;
+      }
+
+      p {
+        margin: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Live Match Details</h1>
+    <div id="matchDetails"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      // Connect to Socket.IO server
+      const socket = io();
+
+      // Listen for live match details from the server
+      socket.on('liveMatchDetails', (matchDetails) => {
+        console.log('Received live match details:', matchDetails);
+
+        // Update the UI with the received match details
+        const matchDetailsDiv = document.getElementById('matchDetails');
+        matchDetailsDiv.innerHTML = ''; // Clear the previous details
+
+        matchDetails.forEach((detail) => {
+          const matchInfo = document.createElement('p');
+          matchInfo.textContent = `Overs: ${detail.overs} | Score: ${detail.score}`;
+          matchDetailsDiv.appendChild(matchInfo);
+        });
+      });
+    </script>
+  </body>
+</html>
