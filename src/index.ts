@@ -13,7 +13,7 @@ app.listen(port, () => {
 });
 
 
-import { TwilioService } from './services/twilio'; // Import the service
+import { TwilioService } from './services/v1/twilio/twilio'; // Import the service
 
 const testTwilio = async () => {
 const testPhoneNumber = process.env.RECIPIENT_PHONE_NUMBER || ''; // Replace with your real number
@@ -36,6 +36,24 @@ async function callUserWithTTS() {
   const response = await TwilioService.makeCall(testPhoneNumber,testMessage);
   console.log('Call Response:', response);
 }
-testTwilio();
+//testTwilio();
 // testWhatsApp();
 // callUserWithTTS();
+
+import { extractImagesFromPDFs, extractTextFromPDFs } from "./services/v1/pdfExtract";
+import path from "path";
+const pdfPaths = [
+    path.join(__dirname, "pdfs", "a.pdf"),
+    path.join(__dirname, "pdfs", "b.pdf"),
+]
+const outputFolder = "./src/services/v1/pdfExtract/pdf_image";
+console.log(pdfPaths)
+console.log(outputFolder);
+
+(async () => {
+    await extractImagesFromPDFs(pdfPaths, outputFolder);
+    console.log("Images extracted!");
+
+    // const textFilePath = await extractTextFromPDFs(pdfPaths);
+    // console.log(`Text extracted to: ${textFilePath}`);
+})();

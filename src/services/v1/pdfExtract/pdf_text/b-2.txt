@@ -1,0 +1,533 @@
+
+
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/362098079
+A Detailed Analysis of the Critical Role of artificial intelligence in Enabling
+High-Performance Cloud Computing Systems
+Conference Paper · April 2022
+DOI: 10.1109/ICACITE53722.2022.9823679
+CITATIONS
+32
+READS
+505
+6 authors, including:
+Shahanawaj Ahamad
+University of Ha'il
+94 PUBLICATIONS   464 CITATIONS   
+SEE PROFILE
+Milad Mohseni
+Islamic Azad University of Tabriz
+29 PUBLICATIONS   161 CITATIONS   
+SEE PROFILE
+Ghassan Fadhil Smaisim
+University Of Kufa
+130 PUBLICATIONS   2,482 CITATIONS   
+SEE PROFILE
+Amrendra Tripathi
+University of Petroleum and Energy Studies
+27 PUBLICATIONS   472 CITATIONS   
+SEE PROFILE
+All content following this page was uploaded by Shahanawaj Ahamad on 30 July 2022.
+The user has requested enhancement of the downloaded file.
+
+ 
+ 
+A Detailed Analysis of the Critical Role of artificial   
+intelligence in Enabling High-Performance Cloud 
+Computing Systems
+Shahanawaj Ahamad
+1
+1
+College of Computer Science and 
+Engineering, University of Hail, Saudi 
+Arabia
+drshahwj@gmail.com
+Milad Mohseni
+2
+2
+degree in Computer Architecture, 
+Computer, Islamic Azad University 
+(IAU), Tabriz, Iran
+stu.m.mohseni@iaut.ac.ir
+Orchid: 0000-0002-5773-0077
+Vineet Shekher
+3*
+3
+Associate Professor, Electrical 
+Engineering Department, BIT Sindri, 
+Dhanbad, India.
+vineet.ee@bitsindri.ac.in
+Ghassan Fadhil Smaisim
+4
+4
+Department of Mechanical 
+Engineering, Fa
+culty of Engineering, 
+University of Kufa, Iraq
+Nanotechnology and Advanced 
+Materials Research Unit (NAMRU), 
+Faculty of Engineering, University of 
+Kufa, Iraq
+Ghassan.Smaisim@uokufa.edu.iq
+Amrendra Tripathi
+5
+5
+Assistant professor (Senior scale)
+School of computer science, UPES, 
+Dehradun
+tripathiamrendra@gmail.com
+Orchid id 0000-0002-2350-4012
+Joel Alanya-Beltran
+6
+Professor, Electronic Department
+Universidad Tecnológica del Perú
+C18121@utp.edu.pe
+https://orcid.org/0000-0002-8058-6229
+Abstract-Cloud  computing  reflects  effective  delivery  of  
+computing   services   such   as   software,   storage   purposes,   
+analytics,  intelligence  and  many  others.  Besides  that,  it  also  
+offers faster innovation and at the same time flexible resources. 
+In  an  organisation,  a  cloud  computing  system  provides  tight  
+security   of   data   with   a   low   maintenance   cost.   A   huge   
+collaboration   has   been   seen   between   various   industries   
+through  cloud  systems.  Those  all  processes  have  been  boosted  
+up  by  the  implementation  of  AI.  Incorporation  of  AI  by  those  
+industries   hugely   influences   the   efficiency   rate   of   cloud   
+computing  techniques  and  due  to  this  reason,  the  combined  
+effect  of  those  two  technologies  brings  up  huge  profitability  to  
+those   organisations.   Implementation   of   machine   learning   
+models,    as    well    as    cognitive    computing,    increases    the    
+performance  of  cloud  systems.  In  addition  to  this,  a  lot  of  
+benefits  have  been  seen  when  organisations  incorporate  AI  in  
+cloud computing techniques. 
+This paper contains a detailed introduction part along with 
+a  well  informative  literature  review.  A  research  methodology  
+also  has  been  provided  where  three  research  questions  are  
+mentioned.
+The   data   analysis   part   comprises   a   multi   regression   
+analysis   where   the   independent   variables   are   years   and   
+percentage   of   usage   of   AI   in   various   organisations.   The   
+dependent  variable  is  profitability.  A  critical  discussion  part  
+also   has   been   presented   and   a   conclusion   has   also   been   
+provided with a few recommendations. 
+Keywords-   Artificial   intelligence,   cloud   computing,   multi   
+regression  analysis,  machine  learning  techniques,  data  security,  
+cost-effectiveness, cognitive computing technique
+I. INTRODUCTION
+Artificial  Intelligence  defines  some  special  and  unique  
+ability   of   any   computer   that   is   controlled   by   another   
+computer  to  effectively  perform  several  important  tasks.  
+Artificial  intelligence  highly  requires  human  intelligence  
+such  as  visual  perception,  recognition  of  speech,  making  of  
+decisions  and  many  others  [1].  In  recent  days  this  system
+utilises  in  various  important  sectors  such  as  monitoring  of  
+social  networking  sites,  investigation  of  financial  processes,  
+healthcare  management  and  many  others.  This  intelligence  
+system  also  plays  a  significant  role  in  ensuring  the  high  
+performance of cloud computing systems. On the other hand, 
+cloud  computing  reflects  the  delivery  of  various  kinds  of  
+services  by  using  internet  systems.  This  technology  has  a  
+wide range of resources such as various databases, software, 
+servers  and  many  others.  Through  this  cloud  computing  
+technology,  those  resources  can  be  easily  utilised  and  a  
+detailed  view  of  software  can  also  be  gained  easily  through  
+this process. Data backup process, development of software, 
+analysis of big data is some of the important things that can 
+easily  be  handled  through  this  technology.  This  research  
+paper is going to be explored a transparent evaluation of the 
+role  of  artificial  intelligence  that  helps  develop  high  cloud  
+computing  systems  through  using  multi  regression  analysis.  
+The   multi   regression   analysis   technique   is   a   specific   
+statistical analysis tool that can be utilised for evaluating the 
+relationship   between   several   dependent   and   independent   
+variables  [2].  In  this  paper,  artificial  intelligence  and  cloud  
+computing  systems  can  be  considered  as  two  important  
+variables  and  those  two  tools  can  be  effectively  analysed  
+through this technique. Artificial intelligence (AI) supported 
+cloud   systems   utilises   various   data   and   based   on   that   
+information,    it    makes    predictions.    Various    important    
+problems  can  be  easily  solved  before  noticing  by  the  users.  
+Some importance of AI-based technology that benefits cloud 
+computing is given in the following. 
+II. LITERATURE REVIEW
+According to Holzinger artificial intelligence is probably 
+the  oldest  technology  in  the  domain  of  computer  science.  It  
+was forecasted that almost ninety per cent of the organisation 
+would  employ  AI  in  their  business  initiative.  It  is  also  
+forecasted  at  the  same  time  that  those  organisations  would  
+also incorporate AI in their cloud system. It is predicted that 
+around  seventy  per  cent  of  the  organisations  would  import  
+their  data  through  effective  employment  of  tools.  The  data  
+2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)
+978-1-6654-3789-9/22/$31.00 ©2022 IEEE
+156
+
+ 
+ 
+shows   that   around   sixty-five   per   cent   would   start   to   
+formulate applications in this particular scenario. Even in the 
+domain  of  2021,  individuals  believe  that  AI  is  an  apparatus  
+for  the  future.  Almost  all  the  individuals  with  a  smartphone  
+in  their  hand  tend  to  employ  cloud  computing  extensively.  
+The  effectiveness  of  AI  tends  to  go  unnoticed  as  it  plays  a  
+major role in the statistical prediction in a particular scenario. 
+Cloud   computing   features   such   as   dynamic,   regulated   
+sharing of data pools of computational services have enabled 
+the  technology  development  and  frameworks  to  meet  the  
+needs of growing applications such as smart cities, scientific 
+research,    agriculture,    healthcare,as    well    astraffic    
+management.  However,  it  is  important  to  comprehend  the  
+correlation between cloud and AI can vehemently transform 
+the   pattern   on   which   an   organisation   operates   in   their   
+business  scenario.  It  can  maximise  the  efficiency  into  ten  
+folds.  Different  types  of  technological  advancement  can  
+occur  due  to  the  efficient  marriage  of  AI  and  clouds.  The  
+core   technologies   for   employing   cloud   computing   are   
+distributed  computing,  internet  tools,  system  administrative  
+technologies  and  hardware  technologies.  It  can  effectively  
+revolutionise  the  functioning  of  the  business.  It  enables  the  
+organisation  to  tap  into  machine  learning  assets  assimilated  
+with  the  smart  cloud.  It  can  be  compartmentalised  into  two  
+distinct   categories.   They   are   Cloud   AI   initiatives   and   
+Machine  learning  programmes.  This  robust  collaboration  
+effectively  provides  the  organisation  with  a  more  assertive,  
+well-organised  and  unlimited  database  to  store  the  big  data  
+and     employ     them     systematically.     Additionally,     the     
+assimilation between AI and cloud computing influences the 
+initiatives  as  it  systematically  helps  to  manage  automatic  
+transaction   recognition,   anomaly   optimisation,   allocation   
+identification,  predictive  emulation,  aggressive  development  
+and   many   others.   Multiple   regression   examination   and   
+analysis   plays   a   key   role   to   predict   the   influence   of   
+employing  cloud  computing  for  different  organisations.  It  is  
+basically  a  technique  that  assists  to  analyse  the  correlation  
+between a single determinant and multiple determinants. The 
+core aim of the multiple regression is to analyse the value of 
+a  single  variant.  It  can  effectively  predict  the  influence  of  
+cloud computing in an organisation. 
+Figure 1: Techniques of AI
+(Source: [4])
+According  to  Malik  Cloud  computing  is  regarded  as  the  
+technology  that  will  shape  the  future  efficiently.  He  also  
+provided  a  broad  perspective  on  cloud  computing  while  
+shedding a light on the technologies associated with it. It also 
+illuminated  virtualisation  in  the  journal.  Cloud  computing  is  
+basically a terminology that has become vehemently popular 
+in the last decade. It generally enables individuals to tap into 
+all the attributes of the said system while cancelling the bulk 
+into  the  core  system.  Numerous people  tend  to  employ  this  
+cloud computing technology without even comprehending it. 
+This  technology  enables  individuals  to  store  their  personal  
+information   in   a   “cloud-hosted   server”   that   efficiently   
+stockpile  the  data  for  future  usage.  It  plays  a  vital  role  in  
+different  kinds  of  initiatives  as  it  helps  organisations  to  
+manage  a  large  amount  of  data.  It  has  multiple  benefits.  It  
+vehemently  minimises  the  expenditure  spent  on  information  
+technology.  It  includes  minimisation  of  the  cost  of  system  
+manipulation [5]. It also tends to maximise the scalability of 
+the  initiatives.  It  effectively  frees  up  time  consumption.  It  
+assists  to  run  the  business  effectively.  It  also  assists  in  
+business  continuity.  It  includes  natural  disasters  and  other  
+unwanted  scenarios.  It  tends  to  maximise  the  collaboration  
+efficacy   as   it   provides   the   opportunity   to   communicate   
+efficiently   and   put   forward   the   box   idea.   It   provides   
+flexibility   in   the   working   scenarios.   It   provides   the   
+opportunity for gaining automatic updates. Cloud computing 
+has  become  a  significant  resource  across  many  parts  of  
+society, including academics, government, and business, as a 
+result of its fast expansion. Cloud computing features include 
+dynamic,  regulated  access  to  pooled  pools  of  computer  
+resources.   Sensors   and   actuators,   as   well   as   other   IoT   
+elements, interface with the gateway, which is all networked 
+through 5G networks. The users can interact with the model 
+using  an  app  application  on  the  access  point,  which  uses  
+Bitcoin   (or   an   equivalent   cryptocurrency)   software   to   
+estimate  costs.  Cloud  computing  is  a  new  paradigm  that  
+allows  for  on-demand,  regulated  access  to  computational  
+capacity,   allowing   for   technological   advancement   and   
+geographically dispersed applications.
+Figure 2. Conceptual model for Cloud Futurology
+(Source: [6])
+According   to   Zhou,   cloud   computing   is   vehemently   
+promoted by the business giants such as google, amazon and 
+other   organisations.   The   data   from   Statista   effectively   
+demonstrates  that  the  worth  of  the  AI  market  would  cross  
+ninety  billion  by  2026.  It  is  not  a  secret  cloud  computing  
+acts  as  a  tool  to  maximise  the  scope  and  influence  in  the  
+broader scenario. For example, Google is a brand that tends 
+to  utilise  cloud  systems  effectively  in  the  IT  industry  to  
+maximise  its  innovation.  AI  is  effectively  incorporated  into  
+the   grain   of   IT.   It   assists   to   manage   tasks.   Effective   
+Machine 
+Learning
+Automation
+NLP 
+Techniques
+High 
+Perforance 
+Cloud 
+Computing
+Broad 
+Network
+Enhanced 
+Service
+Resource 
+pooling 
+Focused 
+Elasticity
+2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)
+157
+
+ 
+ 
+employment  of  AI  in  the  cloud  system  assists  google  to  
+maximise   its   analytical   attributes.   It   also   assists   in   
+administering the routine processes by the system. It enables 
+the  team  associated  with  google  to  monitor  the  potency  of  
+the cloud. AI also enables google to raise the quality of data 
+management with the effective help of AI [6]. AI tools such 
+as    the    Google    cloud    platform    assists    the    team    to    
+comprehend    the    way    information    is    updated    and    
+administered.  It  enables  Google  to  provide  more  accurate  
+real-life information. It also minimises the risk of fraudulent 
+pursuit.  It  also  can  influence  vehemently  in  certain  spheres  
+such  as  consumer  service,  information  regarding  supply  
+chain  and  many  others.  GCP  put  forward  Iaas,  PaaS  and  
+SaaS  to  the  different  organisations  operating  in  different  
+domains.  GCP  is  basically  a  service  for  constructing  and  
+manoeuvring  applications  that  can  be  issued  from  is  HDC.  
+Google cloud made around 13 billion U.S. dollars and it is a 
+testament  to  the  potency  of  the  organisation  to  employ  AI  
+effectively in the cloud system. As the revenue of the google 
+cloud  is  expanding  unfathomably,  it  can  be  said  that  many  
+an  organisation  is  adopting  this  system  at  a  significant  rate
+[7].
+AI as a service is evolving vehemently the way organisation 
+is  employing  tools  and  technology.  Organisations  such  as  
+amazon  utilise  the  cloud-based  retail  website.  It  enables  
+different  brands  to  vend  their  product  effectively.    It  also  
+employs  pricing  attributes  that  tend  to  reshuffle  the  pricing  
+on  a  given  product  as  per  the  market  demand  and  the  
+activity   of   competitor   brands.   The   AI-powered   module   
+enables  the  organisation  to  efficiently  to  optimise  the  price  
+of the product efficiently. Effective employment AI enables 
+the organisation to make proper market analysis and put into 
+the    initiative    to    maintain    the    sustainability    of    the    
+organisation. 
+AI and cloud computing are revolutionising the initiative at 
+every   level.   Cloud   computing   is   basically   an   efficient   
+breakthrough  tool  in  the  domain  of  IT.  It  provides  a  long  
+range  of  advantages  for  the  organisation  and  as  well  as  for  
+the consumers. Despite the advantages, it has some potential 
+challenges   such   as   data   breaches.   Multiple   regression   
+examination  and  analysis  plays  a  key  role  to  predict  the  
+influence   of   employing   cloud   computing   for   different   
+organisations. 
+III. RESEARCH METHODOLOGY
+This  study  was  totally  evaluated  through  a  quantitative  
+research  approach.  The  multi  regression  analysis  has  been  
+done  by  using  the  SPSS  tool.  According  to  this  statistical  
+method,  three  different  variables  are  chosen.  This  topic  is  
+based on the influence of AI in cloud computing as well as 
+the effectiveness of AI enabling the wide-range performance 
+of  cloud  computing.  Due  to  this  reason,  two  independent  
+variables  have  been  chosen.  The  first  one  is  a  year  and  the  
+second  type  is  the  percentage  of  usage  of  AI technology  in  
+various  companies  for  increasing  the  performance  of  cloud  
+computing. An independent variable has also been taken and 
+that  is  the  respective  profit  percentage  of  those  companies.  
+The  usage  of  AI  actually  increases  the  profitability  of  
+various companies and the evidence of profitability has been 
+thoroughly discussed in the discussion part. 
+In large and medium-sized data centers, not only the power 
+of  computer  hardware  such  as  servers  is  used,  but  also  the  
+power  of  additional  equipment  such  as  air  conditioners.  In  
+general,   the   power   consumption   of   the   calculator   is   
+approximately  the  same  as  the  power  consumption  of  other  
+support  devices.  In  other  words,  if  the  power  consumption  
+of  computer  hardware  in  the  data  is  1,  then  the  power  
+consumption of the entire data center is 2. In some cases the 
+data  is  very  good  with  a  certain  durability.  technology,  
+electricity  consumption  can  reach  a  high  level.  1.7.  ,  but  
+Google  pushed  other  files  up  to  1.2  industry  leading  for  
+well-designed  templates.  A  special  feature  of  this  design  is  
+the  temperature  of  the  data  center,  which  means  that  the  
+material is included in the operating temperature of the data 
+center.
+Virtualization  technology  is  the  most  important  technology  
+for   cloud   computing,   authentication   and   integration   of   
+physical  resources.  The  use  of  this  technology  can  improve  
+the  use  of  physical  therapy  equipment,  depending  on  user  
+needs,  flexible  and  fast  configuration  and  transportation.  
+Virtualization   technology   is   completely   different   from   
+multitasking and hyperthreading technology. Computers are 
+an   important   part   of   people's   lives.   With   computer   
+development,  important  data  is  created  and  waiting  to  be  
+completed;  We  would  have  benefited  more  if  this  had  been  
+done  properly,  otherwise  we  would  have  seen  the  data  
+broken, the data was just a waste. This study enhances other 
+research     activities     and     promotes     conclusions     and     
+implementation    using    the    PRISMA    approach.    The    
+development    of    computer    science    will    support    the    
+development  of  the  organization.  Consideration  is  given  to  
+choosing the right and appropriate equipment, including our 
+business. Existing data performance is the largest computer, 
+grid computer, group computer and cloud computing.
+The   good   old   ways   are   always   bad   for   the   business   
+environment   which   has   been   replaced   by   the   latest   
+technology.  The  strategy  to  improve  the  path  needs  to  be  
+explored  in  order  to  have  a  global  impact  on  the  world  of  
+intellect,     innovation     and     intellectual     property.     E-
+Government in Dubai thrives on the best information in the
+industry,   government   support   for   innovation,   financial   
+adequacy  and  e-government  participation  of  people  and  
+businesses. Fake Spy is said to play an important role in the 
+mobile  business  because  it  creates  user  profiles  and  meets  
+their   needs   based   on   their   needs   and   preferences.   In   
+addition,  the  AI  team  works  by  identifying  and  predicting  
+shortcomings,  providing  a  quick  solution.  Also,  AI  can  
+communicate  with  users,  for  example  TOBi  is  a  chatbot  
+developed  by  Vodafone  to  help  customers  answer  online  
+questions  and  support  solutions,  which  makes  users'  stuff  
+supported.
+IV. DISCUSSION AS WELL AS FINDINGS
+The  first  research  question  is  based  on  the  process  of  
+enhancing  the  profitability  of  various  organisations  through  
+the   incorporation   of   AI   in   cloud   computing   systems.   
+Through  using  AI  various  IT  organisations  reshape  their  
+structure  totally.  In  recent  days  a  huge  level  of  competition  
+exists  between  several  IT  industries  and  to  make  a  better  
+competitive advantage those industries implement AI-based 
+2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)
+158
+
+ 
+ 
+computing  platforms  and  incorporate  those  platforms  in  
+their  cloud  systems  to  better  optimize  their  resources  [9].  
+Access   to   unlimited   data   as   well   as   making   effective   
+decisions from those datasets can be effectively done by the 
+AI  process.  A  business  organisation  required  some  well-
+trained analysts whereas AI effectively manage this analysis 
+and can also give better analysis result. Thus, incorporation 
+of  AI  in  cloud  computing  increases  the  advantage  of  those  
+industries  in  the  field  of  the  competitive  market.  Various
+statistical data reflects 81% of leaders are planning to invest 
+huge capital for the incorporation of AI. The adoption of AI 
+in    several    industries    enhances    automation    of    digital    
+marketing,  CRM  and  at  the  same  time  effective  analysis  of  
+big data [10]. 
+The  second  research  question  is  based  on  the  process  of  
+enhancement  of  data  security  through  using  AI  song  with  
+cloud    computing.    Business    organisations    incorporate    
+various  works  in  their  personalised  cloud.  Due  to  this  
+reason,  the  information  must  be  kept  safe  always.  The  
+management  of  IT  and  other  business  organisation  can  use  
+AI-powered   network   security   technologies   for   tracking   
+network    traffic    [11].    Thus,    those    organisations    can    
+effectively   prevent   damage   to   that   critical   information.   
+Amazon  GuardDuty  can  be  considered  an  important  threat  
+detection  technology.  Maintenance  of  data  privacy  is  also  
+another  important  area  that  can  be  immensely  managed  
+through  using  artificial  intelligence  techniques  along  with  
+cloud systems. 
+After  that,  the  third  research  question  sheds  light  on  the  
+processes   through   which   AI   can   enhance   the   cloud   
+computing    system.    There    are    three    types    of    cloud    
+development  services  and  three  various  kinds  of  cloud  
+deployment   processes.   Private   cloud,   public   cloud   and   
+hybrid  cloud  are  three  different  types  of  cloud  processes.  
+Through  the  help  of  AI  infrastructure,  an  organisation  can  
+create  models  of  machine  learning  where  a  broad  range  of  
+data is applied to definite algorithms and thugs it enables the 
+performance  of  cloud  services  by  improving  data  accuracy  
+[12].   In   addition   to   machine   languages,   the   cognitive   
+computing   technique   also   allows   users   to   deliver   their   
+personal  information.  This  model  can  effectively  eliminate  
+the correct training model as well as the usage of the proper 
+algorithm model. A lot of benefits can be seen in the case of 
+the usage of AI that also enhances the performance of cloud 
+systems in various organisations. Some of those benefits are 
+mentioned  in  the  following.  The  development  of  cloud  
+applications through using AI diminishes the requirement of 
+various  hardware  and  software  purchases.  Besides  that,  it  
+can  also  eliminate  the  requirement  of  onsite  data  centres.  
+Thus, cost-effectiveness is influenced through AI. As cloud 
+computing  is  based  on  the  total  internet  of  things  AI  boost  
+up   this   technology   and   overall   productivity   has   been   
+increased [13].
+In  the  data  analysis  part,  a  statistical  analysis  has  occurred  
+where  multi  regression  analysis  has  been  done.  In  this  
+analysis, a histogram chart, as well as a scatterplot, has also 
+been figured out. In that area, three things have been chosen 
+for  variables  and  those  are  profitability,  percentage  of  AI  
+usage  in  industries  and  the  last  one  is  years.  Through  this  
+analysis,  a  significant  value  reflects  .001  that  defines  the  
+regression model that has been figured out as a good fit for 
+the information that is used to create this analysis. 
+V. CONCLUSION
+After evaluation of the whole paper, it can be concluded that 
+there  is  a  huge  need  for  the  implementation  of  artificial  
+intelligence  in  the  cloud  computing  processes  as  it  can  
+create a significant level of benefits in various organisations. 
+To  create  a  wide  range  of  competitive  advantages  it  is  
+important to implement AI in various business organisations 
+to  smoothen  their  production  processes.  Apart  from  that,  to  
+protect  big  data  as  well  as  analysis  of  those  data  AI  and  
+cloud  computing  both  processes  have  a  huge  significance.  
+AI  effectively  manages  and  analyses  big  data  whereas  the  
+cloud  process  maximises  the  security  of  those  data.  There
+are various machine learning tools and cognitive computing 
+techniques   through   which   one   can   easily   increase   the   
+performance   of   big   data.   In   addition   to   this   cost-
+effectiveness  can  also  be  increased  as  there  is  less  need  for  
+maintenance costs and online data centres. At last, it can be 
+stated   that   AI   has   a   huge   influence   on   increasing   the   
+performance  of  cloud  computing  that  also  assist  in  the  
+enhancement of profitability of an organisation.
+REFERENCES:
+[1] Gill, S.S., Tuli, S., Xu, M., Singh, I.,  Singh,  K.V.,  Lindsay,  D.,  Tuli,  
+S.,   Smirnova,   D.,   Singh,   M.,   Jain,   U.   and   Pervaiz,   H.,   2019.   
+Transformative  effects  of  IoT,  Blockchain  and  Artificial  Intelligence  
+on    cloud    computing:    Evolution,    vision,    trends    and    open    
+challenges. Internet of Things, 8, p.100118.
+[2] Ong,   M.H.A.   and   Puteh,   F.,   2017.   Quantitative   data   analysis:   
+Choosing   between   SPSS,   PLS,   and   AMOS   in   social   science   
+research. International     Interdisciplinary     Journal     of     Scientific     
+Research, 3(1), pp.14-25.
+[3] Tadapaneni,   N.R.,   2018.   Cloud   Computing:   Opportunities   And   
+Challenges. Available at SSRN 3563342.
+[4] Holzinger,  A.,  Langs,  G.,  Denk,  H.,  Zatloukal,  K.  and  Müller,  H.,  
+2019.   Causability   and   explainability   of   artificial   intelligence   in   
+medicine. Wiley    Interdisciplinary    Reviews:    Data    Mining    and
+Knowledge Discovery, 9(4), p.e1312.
+[5] Malik,    M.I.,    Wani,    S.H.    and    Rashid,    A.,    2018.    CLOUD    
+COMPUTING-TECHNOLOGIES. International Journal of Advanced 
+Research in Computer Science, 9(2).
+[6] Zhou,  Y.,  Zhang,  D.  and  Xiong,  N.,  2017.  Post-cloud  computing  
+paradigms:    a    survey    and    comparison. Tsinghua    Science    and    
+Technology, 22(6), pp.714-732.
+[7] Alam,  T.,  2021.  Cloud  Computing  and  its  role  in  the  Information  
+Technology. IAIC  Transactions  on  Sustainable  Digital  Innovation  
+(ITSDI), 1, pp.108-115.
+[8] Statista.com,  (2021).  Google  Cloud  -  Statistics  &Facts.Available  
+at:https://www.statista.com/topics/8048/google-
+cloud/#dossierKeyfigures[ Accessed on : 20th December, 2021]
+[9] Yoo,  S.K.  and  Kim,  B.Y.,  2018.  A  decision-making  model  for  
+adopting a cloud computing system. Sustainability, 10(8), p.2952.
+[10] Nguyen,  K.K.,  Hoang,  D.T.,  Niyato,  D.,  Wang,  P.,  Nguyen,  D.  and  
+Dutkiewicz,  E.,  2018,  April.  Cyberattack  detection  in  mobile  cloud  
+computing:   A   deep   learning   approach.   In 2018   IEEE   wireless   
+communications   and   networking   conference   (WCNC) (pp.   1-6).   
+IEEE.
+[11] Sun,  W.,  Liu,  J.  and  Yue,  Y.,  2019.  AI-enhanced  offloading  in  edge  
+computing:   When   machine   learning   meets   industrial   IoT. IEEE   
+Network, 33(5), pp.68-74.
+[12] Surya,    L.,    2018.    Streamlining    Cloud    Applicationwith    AI    
+Technology. International   Journal   of   Innovations   in   Engineering   
+Research and Technology [IJIERT] ISSN, pp.2394-3696.
+[13] Soni,  N.,  Sharma,  E.K.,  Singh,  N.  and  Kapoor,  A.,  2020.  Artificial  
+intelligence  in  business:  From  research  and  innovation  to  market  
+deployment. Procedia Computer Science, 167, pp.2200-2210.
+2022 2nd International Conference on Advance Computing and Innovative Technologies in Engineering (ICACITE)
+159
+View publication stats
