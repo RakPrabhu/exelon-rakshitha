@@ -40,20 +40,39 @@ async function callUserWithTTS() {
 // testWhatsApp();
 // callUserWithTTS();
 
-import { extractImagesFromPDFs, extractTextFromPDFs } from "./services/v1/pdfExtract";
+// import { extractImagesFromPDFs, extractTextFromPDFs } from "./services/v1/pdfExtract";
+// import path from "path";
+// const pdfPaths = [
+//     path.join(__dirname, "pdfs", "a.pdf"),
+//     path.join(__dirname, "pdfs", "b.pdf"),
+// ]
+// const outputFolder = "./src/services/v1/pdfExtract/pdf_image";
+// console.log(pdfPaths)
+// console.log(outputFolder);
+
+// (async () => {
+//     await extractImagesFromPDFs(pdfPaths, outputFolder);
+//     console.log("Images extracted!");
+
+//     // const textFilePath = await extractTextFromPDFs(pdfPaths);
+//     // console.log(`Text extracted to: ${textFilePath}`);
+// })();
+
+import { extractTextFromWordDocs,extractImagesFromWordDocs,replaceInFile } from './services/v1/wordExtract';
 import path from "path";
-const pdfPaths = [
-    path.join(__dirname, "pdfs", "a.pdf"),
-    path.join(__dirname, "pdfs", "b.pdf"),
-]
-const outputFolder = "./src/services/v1/pdfExtract/pdf_image";
-console.log(pdfPaths)
-console.log(outputFolder);
-
-(async () => {
-    await extractImagesFromPDFs(pdfPaths, outputFolder);
-    console.log("Images extracted!");
-
-    // const textFilePath = await extractTextFromPDFs(pdfPaths);
+const wordPaths = [
+  path.join(__dirname, "wordDocs", "a.docx"),
+  // path.join(__dirname, "wordDocs", "b.docx"),
+  ]
+  const outputFolder = "./src/services/v1/wordExtract/word_image";
+  console.log(wordPaths)
+  console.log(outputFolder);
+  (async () => {
+    // await extractImagesFromWordDocs(wordPaths, outputFolder);
+    // console.log("Images extracted!");
+    // const textFilePath = await extractTextFromWordDocs(wordPaths);
     // console.log(`Text extracted to: ${textFilePath}`);
-})();
+    replaceInFile('src/wordDocs/sample.docx', /hello/gi, "hi","src/services/v1/wordExtract/modified.docx");
+
+    })();
+

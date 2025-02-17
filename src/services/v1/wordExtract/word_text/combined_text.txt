@@ -1,0 +1,648 @@
+
+
+
+
+
+
+
+
+
+
+
+
+A Seminar Report On
+
+“AI IN CLOUD COMPUTING REVOLUTION”
+
+
+
+
+
+
+
+Submitted in partial fulfillment requirements for the award of the Degree
+
+
+
+BACHELOR OF ENGINEERING IN
+
+INFORMATION SCIENCE AND ENGINEERING
+
+
+
+
+
+By
+
+M RAKSHITHA PRABHU    	4NM21IS071
+
+
+
+
+
+
+
+Under the Guidance of
+
+
+
+Dr. USHA DIWARKALA
+
+Associate Professor 
+
+
+
+Department of Information Science and Engineering
+
+
+
+
+
+
+
+Department of Information Science and Engineering
+
+
+
+NMAM Institute of Technology, Nitte 2024– 2025
+
+
+
+
+
+
+
+CERTIFICATE
+
+
+
+
+
+This is to certify that M RAKSHITHA PRABHU, 4NM21IS071, a bonafide student of NMAM Institute of Technology, Nitte has submitted the seminar report for the seminar entitled "AI IN CLOUD COMPUTING REVOLUTION" in partial fulfillment of the requirements for the award of Bachelor of Engineering in Information Science and Engineering during the year 2024-25. It is verified that all corrections / suggestions indicated for internal assessment have been incorporated in the report deposited in the departmental library. The technical seminar report has been approved as it satisfies the academic requirements in respect of seminar work prescribed by Bachelor of Engineering degree.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Signature of the guide
+
+Signature of the coordinator
+
+Signature of the HOD
+
+  Faculty name
+
+Faculty Coordinator name
+
+Ashwini B
+
+
+
+
+
+
+
+
+
+
+
+
+
+DECLARATION
+
+
+
+
+
+We hereby declare that the entire work embodied in this Seminar report titled “AI IN CLOUD COMPUTING REVOLUTION” has been carried out by us at NMAM Institute of Technology, Nitte under the supervision of Dr Usha Diwakarla for Bachelor of Engineering in Information Science and Engineering. This report has not been submitted to this or any other University for the award of any other degree.
+
+
+
+
+
+M RAKSHITHA PRABHU(4NM121IS071)
+
+           Department of ISE, NMAMIT, Nitte
+
+
+
+TABLE OF CONTENTS
+
+
+
+
+
+
+
+Abstract	  1
+
+List of Figures	2
+
+                   1. Introduction                                                                                                                                         3-7
+
+2. Literature survey                                                                                                                                 8
+
+3. Objective                                                                                                                                             9
+
+                    5. Proposed Methodology                                                                                                                      10
+
+                    6. Current Methodology                                                                                                                         11
+
+                    7. Implementation of Methodology                                                                                                       12
+
+                    8. Results and Discussions                                                                                                                     13
+
+                    9. Conclusion                                                                                                                                          14
+
+                   10. Challenges                                                                                                                                         15 	
+
+                   11. Future Scope       	   16-17
+
+                   12. References                                                                                                                                         18
+
+
+
+
+
+ABSTRACT
+
+
+
+The integration of Artificial Intelligence (AI) with cloud computing has revolutionized data-driven decision-making by enabling scalable, efficient, and autonomous systems. This report explores the evolution of AI in cloud computing, focusing on advancements in machine learning, deep learning, and generative AI supported by cloud platforms. Key applications such as data analytics, natural language processing, and autonomous cloud operations are examined, highlighting their role in enhancing business productivity. While the benefits of scalability, advanced analytics, and improved performance are significant, challenges such as integration complexity, bias, and security concerns persist. Real-world implementations, including AI-powered healthcare diagnostics, underscore the transformative potential of this technology. This integration offers businesses a robust framework to optimize costs, strengthen data security, and achieve operational excellence in a competitive landscape.
+
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+LIST OF FIGURES
+
+
+
+
+
+Figure 1: AI-Based Telemedicine for OCT Diagnosis and Treatment Strategy	3
+
+
+
+                 Figure 2: Applications of AI in Cloud Computing                                                                                5
+
+
+
+                 Figure 3: AI Applications in Healthcare and Pharmaceutical Industry                                                 5      
+
+INTRODUCTION
+
+
+
+
+
+1.1 Background
+
+
+
+ Artificial Intelligence (AI) and cloud computing have emerged as transformative technologies, reshaping industries by   enabling data-driven solutions and scalable computing power. AI allows machines to perform tasks like data analysis, pattern recognition, and decision-making, but these processes require significant computational resources. Cloud computing addresses this challenge by providing on-demand, scalable infrastructure, making it easier for organizations to deploy and manage AI models without investing in expensive hardware. This integration has fueled advancements in sectors such as healthcare, finance, retail, and manufacturing. However, despite its benefits, the combination of AI and cloud computing presents challenges, including the complexity of integration, biases in AI models, and security vulnerabilities. As digital transformation continues to accelerate, overcoming these challenges will be crucial for the broader adoption of AI-powered cloud solutions.
+
+
+
+
+
+1.2 Overview of AI in Cloud Computing
+
+
+
+Artificial Intelligence (AI) in cloud computing refers to the integration of AI technologies with cloud platforms to deliver intelligent, scalable, and efficient solutions. Cloud providers such as AWS, Microsoft Azure, and Google Cloud offer AI services, including machine learning, natural language processing, and image recognition, enabling businesses to harness the power of AI without managing complex infrastructure. This synergy allows organizations to process vast amounts of data, automate decision-making, and gain actionable insights faster. AI in cloud computing has revolutionized industries like healthcare, finance, retail, and manufacturing by facilitating smarter operations, predictive analytics, and personalized customer experiences. The flexibility and scalability of cloud computing make it an ideal environment for deploying AI models, driving innovation while optimizing costs and resources.
+
+
+
+Figure 1: AI-Based Telemedicine for OCT Diagnosis and Treatment Strategy
+
+
+
+
+
+ 1.3 Importance and adoption trend
+
+
+
+The importance of AI in cloud computing lies in its ability to empower businesses with intelligent, data-driven solutions while offering scalable and cost-effective infrastructure. By leveraging cloud-based AI services, organizations can access advanced analytics, automate processes, enhance customer experiences, and make smarter decisions. This combination eliminates the need for expensive on-premise hardware, making AI accessible even to smaller enterprises. The adoption of AI in cloud computing is accelerating rapidly, with industries such as healthcare, finance, retail, and manufacturing leading the way. According to market trends, more than 70% of organizations are integrating AI-driven cloud solutions to gain a competitive edge. This trend is fueled by the growing demand for automation, data analytics, and remote accessibility, making AI-cloud integration a key driver of digital transformation.
+
+
+
+
+
+1.4 APPLICATIONS
+
+
+
+The integration of Artificial Intelligence (AI) in cloud computing has significantly transformed how businesses operate by enhancing efficiency, scalability, and decision-making processes. Some key applications include:
+
+1.4.1 Data Analytics and Business Intelligence
+
+AI-driven cloud platforms process vast amounts of data in real time, enabling advanced analytics and providing actionable business insights. This allows organizations to make informed decisions quickly and accurately, giving them a competitive edge in the market.
+
+1.4.2 Natural Language Processing (NLP) and Chatbots
+
+AI-powered tools in Natural Language Processing (NLP) and chatbots have improved customer interactions by understanding and responding to queries efficiently. These tools enhance user experience and automate support services, reducing response times and improving customer satisfaction.
+
+1.4.3 Machine Learning as a Service (MLaaS)
+
+Cloud providers offer Machine Learning as a Service (MLaaS), enabling businesses to build, train, and deploy machine learning models without the need for extensive in-house expertise or infrastructure. This democratizes access to machine learning capabilities, fostering innovation and growth.
+
+1.4.4 Autonomous Cloud Operations (AIOps)
+
+AI automates various cloud management tasks, such as monitoring, optimization, and troubleshooting. These autonomous operations (AIOps) result in self-healing systems, reduced operational costs, and improved system reliability and performance.
+
+
+
+
+
+
+
+Figure.2 Applications of AI in Cloud Computing
+
+
+
+
+
+
+
+Figure 3: AI Applications in Healthcare and Pharmaceutical Industry
+
+LITERATURE SURVEY 
+
+
+
+The adoption of artificial intelligence (AI) in cloud computing is revolutionizing business operations by enabling the creation of autonomous systems, optimizing data management, and providing personalized customer experiences through AI-powered chatbots. The paper by Karthik Allam (2023) emphasizes how AI in the cloud enhances operational efficiency and scalability, allowing businesses to leverage data assets effectively. With projections of significant growth in cloud AI investments, businesses are adopting AI solutions to improve decision-making, streamline processes, and achieve sustainability goals. However, the study highlights challenges such as the need for advanced infrastructure and skilled expertise for effective AI deployment​
+
+Another comprehensive study by Nitin Prasad et al. (2024) explores the integration of cloud computing, artificial intelligence, and machine learning (ML) to improve data analytics capabilities. The research discusses the benefits of this integration, such as enhanced predictive modeling, automated anomaly detection, and improved decision support systems. It presents a comparative analysis of cloud platforms like AWS, Google Cloud, and Microsoft Azure for AI/ML implementations. Additionally, the study underscores ethical considerations, such as data privacy and algorithmic fairness, and offers best practices for integrating these technologies into organizational processes​.
+
+Prathyusha Nama (2022) proposes a three-layered architecture framework for integrating AI with cloud computing to address data processing challenges in distributed environments. The framework comprises a data layer, processing layer, and outcome layer, designed to optimize resource utilization, reduce operational costs, and improve processing efficiency. This research highlights the importance of dynamic resource allocation and secure data handling to enhance scalability and performance. Evaluations demonstrate that the proposed framework significantly reduces latency and operational costs while maintaining strong data security measures. The study concludes that integrating AI with cloud computing offers a scalable, intelligent solution for managing large-scale data processing in distributed systems.
+
+OBJECTIVES
+
+The primary objective of this report is to analyze the integration of Artificial Intelligence (AI) with cloud computing by examining its diverse applications and identifying the challenges associated with this convergence. It aims to evaluate emerging trends and advancements in AI-powered cloud computing, with a focus on how AI-driven technologies optimize cloud-based services, improve automation, and enhance security and operational efficiency within cloud environments. This study highlights AI’s role in improving decision-making processes, reducing operational costs, and enabling predictive analytics for businesses, thereby driving strategic growth and innovation.
+
+In addition, the report addresses the ethical considerations and regulatory compliance requirements essential for the responsible deployment of AI in cloud infrastructures. Key aspects such as transparency, fairness, and accountability are emphasized to ensure ethical practices in AI applications. By investigating these factors, the study underscores the importance of aligning AI innovations with regulatory standards and ethical principles.
+
+Ultimately, this report provides comprehensive insights into how AI continues to shape the future of cloud computing by fostering innovation, scalability, and seamless data management. It serves as a valuable resource for understanding the transformative potential of AI in creating more efficient, intelligent, and adaptive cloud ecosystems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROPOSED METHODOLOGY
+
+The proposed methodology focuses on leveraging advanced AI algorithms integrated within cloud infrastructures to enhance scalability, performance, and automation. This approach systematically applies AI tools and cloud platforms to optimize data processing, model training, and deployment processes. By incorporating best practices from both AI and cloud computing domains, the methodology ensures efficient, cost-effective, and secure solutions.
+
+The first step is requirement analysis, where specific business needs and objectives for AI-cloud integration are identified. This step lays the foundation by understanding the goals and requirements to develop customized solutions. The second step is data collection and preprocessing, which involves gathering and cleaning data to ensure quality inputs for AI models. Proper data preparation is essential for improving the accuracy and reliability of the AI algorithms.
+
+Following this, model selection and training is conducted by choosing appropriate AI algorithms and frameworks based on the problem domain. Selecting the right models ensures that the AI solution aligns with the business objectives and delivers optimal performance. Once the model is trained, the next step is cloud integration, where AI models are deployed on cloud platforms to utilize scalable computing resources and facilitate seamless operations.
+
+Finally, performance monitoring and optimization is carried out continuously to evaluate and improve model performance. Cloud-based tools are used to track and enhance the system’s efficiency, ensuring that the solution remains effective and up to date. This step also involves identifying potential issues and implementing improvements for sustained performance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CURRENT METHODOLOGY
+
+The current methodologies for integrating Artificial Intelligence (AI) with cloud computing rely heavily on established frameworks, platforms, and tools provided by leading cloud service providers. These methodologies prioritize scalability, ease of use, and the efficient handling of large datasets, making AI deployment accessible and practical for various industries.
+
+A key aspect of these methodologies involves the use of frameworks and tools for building and training AI models. Popular frameworks include TensorFlow, PyTorch, and Keras, which are widely used for developing deep learning models. For traditional machine learning tasks, tools such as Scikit-learn and XGBoost are preferred due to their versatility and efficiency.
+
+Cloud platforms play a crucial role in facilitating AI integration by providing comprehensive services. Amazon Web Services (AWS) offers solutions like SageMaker for end-to-end machine learning development, while Google Cloud Platform (GCP) provides tools such as AutoML, TensorFlow on Cloud, and BigQuery for data analysis and AI model deployment. Similarly, Microsoft Azure features Azure Machine Learning, a platform for building, training, and deploying AI models with robust support for scalability and performance optimization.
+
+Various integration techniques are used to connect AI models with cloud services. API-based integration allows seamless interaction between AI models and cloud resources, ensuring flexibility and ease of deployment. Containerization, using tools like Docker and Kubernetes, is employed for scalable and efficient model deployment across multiple environments. Additionally, serverless computing, through functions-as-a-service (FaaS), enables cost-effective AI execution by dynamically allocating resources based on demand.
+
+These current methodologies form the foundation for AI-cloud integration, helping organizations accelerate their digital transformation and leverage the full potential of AI in the cloud environment.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+IMPLEMENTATION OF METHODOLOGY
+
+The implementation of the proposed AI-cloud integration methodology involves a structured approach that focuses on data management, model development, and cloud deployment to ensure a seamless and efficient process. Each phase of implementation plays a critical role in achieving optimal results for AI-powered cloud solutions.
+
+The first step is data preparation, which involves gathering data from various sources such as databases, APIs, and IoT devices. This data collection process ensures that sufficient and relevant data is available for training AI models. Once the data is collected, data cleaning is carried out to handle missing values, outliers, and inconsistencies, thereby improving data quality. Data transformation follows, where data is normalized and encoded to make it suitable for AI models, ensuring that the input data is in the correct format for training.
+
+In the model training phase, selecting the appropriate algorithm is crucial based on the problem type—whether it is classification, regression, or clustering. The training process is enhanced by utilizing cloud-based GPUs and TPUs for faster computation and model training. Hyperparameter tuning is then performed using techniques like grid search and random search to optimize model performance and accuracy.
+
+Once the model is trained, it is prepared for model deployment. Containerization is used to package the model using tools like Docker, ensuring consistent deployment across different environments. The models are then deployed on cloud platforms such as AWS SageMaker, Azure Machine Learning, or Google Cloud Platform (GCP) AI Platform to leverage scalable computing resources. API development is also a key part of this phase, creating RESTful APIs to allow seamless interaction with the deployed models.
+
+Finally, continuous monitoring and maintenance are essential to ensure the model’s long-term performance and reliability. Performance tracking is carried out using cloud monitoring tools to observe model accuracy and efficiency. The implementation includes model updating mechanisms to retrain and update models with new data, keeping them relevant and accurate. Scalability management is handled using cloud-based auto-scaling features, which dynamically adjust resources based on workload demands, ensuring consistent performance even under fluctuating conditions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+RESULTS AND DISCUSSIONS
+
+This section presents the outcomes of implementing the proposed AI-cloud integration methodology, focusing on performance metrics, operational efficiency, challenges encountered, and insights gained. The results highlight the significant advantages of using AI within cloud environments while addressing areas for improvement.
+
+Performance Improvements have been notable, with enhanced model accuracy and faster processing times due to the availability of cloud-based resources. The scalability of cloud platforms has enabled the system to handle large datasets and high traffic without performance degradation, ensuring seamless operations during peak loads. This has been crucial for applications that require real-time processing and continuous model updates.
+
+The integration has also provided significant operational benefits. One of the key advantages is cost optimization achieved by leveraging the pay-as-you-go model of cloud services. Businesses can scale resources up or down based on demand, reducing unnecessary expenditures. Automation of data processing and model management tasks has further streamlined operations, freeing up valuable resources and improving overall efficiency.
+
+However, the implementation was not without its challenges. Integration complexity posed difficulties in ensuring seamless communication between AI models and cloud platforms. Security concerns related to data privacy and compliance with regulatory standards required constant attention to ensure secure operations. Additionally, resource management presented a challenge in balancing performance with cost-effective utilization of cloud resources, especially during high-demand periods.
+
+A comparative analysis was conducted to benchmark the proposed methodology against traditional on-premise AI solutions. The results show that AI-cloud integration significantly outperforms on-premise approaches in terms of scalability, cost efficiency, and ease of maintenance. The effectiveness of the integration in achieving business goals further validates the advantages of adopting AI-cloud solutions.
+
+Several insights were gained through this implementation process. Best practices for AI-cloud integration were identified, such as prioritizing modular architecture, employing robust security protocols, and continuously monitoring performance. Based on these experiences, future recommendations include refining integration techniques, enhancing security measures, and exploring more advanced automation tools to further reduce challenges and enhance performance in upcoming projects.
+
+
+
+
+
+CONCLUSION
+
+
+
+The integration of Artificial Intelligence (AI) and cloud computing has revolutionized industries by enabling scalable, efficient, and intelligent solutions. This convergence enhances scalability, improves data processing, and supports advanced analytics, driving innovation and operational efficiency. One significant application is AI-powered threat detection, where intelligent systems monitor and identify potential security risks, safeguarding data and infrastructure from cyber threats. Additionally, the use of High-Performance Computing (HPC) in cloud environments accelerates the training and deployment of complex AI models, enabling organizations to process vast amounts of data with unparalleled speed and accuracy. Despite challenges like complexity, bias, and security, continuous advancements in cloud-based AI solutions promise to address these concerns. Together, AI and cloud computing offer a transformative framework for businesses to innovate, protect, and thrive in an increasingly data-driven and competitive world.
+
+
+
+In the respect of the WHO principle “health in all policies”, the development of new RF-EMF communication networks should be paralleled by adequate and active involvement of public institutions operating in the field of environmental health, by a revision of the existing exposure limits and by policies aimed to reduce the level of risk in the exposed population. On the other hand, an adequate knowledge of pathophysiological mechanisms linking RF-EMF exposure to health risk should also be useful in the current clinical practice, in particular in consideration of evidences pointing to the role of extrinsic factors as heavy contributors to cancer risk and to the progressive epidemiological growth of noncommunicable diseases.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Challenges
+
+While the integration of AI with cloud computing offers numerous benefits, several challenges must be addressed for successful implementation and widespread adoption. One of the primary concerns is integration complexity, which arises from difficulties in seamlessly integrating AI models with cloud platforms due to varying architectures and compatibility issues. Ensuring interoperability between different frameworks and tools can be challenging, often requiring custom solutions.
+
+Another significant challenge is data security and privacy. Organizations must handle sensitive data carefully to comply with regulatory standards such as GDPR. Maintaining data integrity and preventing unauthorized access in cloud environments is crucial to safeguard user information. Additionally, the presence of bias in AI models poses a risk. Unchecked biases in algorithms can lead to unfair or inaccurate outcomes, potentially affecting decision-making processes.
+
+Resource management is an ongoing issue, as businesses must efficiently allocate and manage cloud resources to balance performance with cost optimization. Poor resource planning can lead to unnecessary expenses or degraded performance. Latency issues also need to be addressed, especially for real-time applications where even minor delays can have significant consequences. Ensuring low-latency performance is critical for applications such as healthcare monitoring and financial transactions.
+
+Furthermore, the skill gap in both AI and cloud technologies is a limiting factor. The shortage of professionals with expertise in these areas can hinder successful implementation and slow down innovation. Lastly, organizations must navigate regulatory compliance related to data sovereignty and AI usage, which involves adhering to complex legal frameworks and industry-specific standards. This can be particularly challenging for businesses operating in multiple regions with different regulations.
+
+Addressing these challenges is essential for maximizing the potential of AI-cloud integration while minimizing risks. Organizations must adopt robust strategies, invest in skill development, and implement strong governance frameworks to overcome these hurdles.
+
+
+
+
+
+
+
+
+
+
+
+Future Scope
+
+The future scope of AI-cloud integration is vast and promising, with several emerging trends and technologies expected to drive continued innovation. As cloud computing and AI continue to evolve, businesses can leverage new opportunities for growth, efficiency, and scalability. Some key areas of future scope include:
+
+Edge Computing and AI: The combination of AI and edge computing offers significant potential for real-time data processing closer to the source. By processing data on edge devices, businesses can reduce latency, improve response times, and optimize bandwidth usage, making AI-powered cloud solutions more efficient for critical applications.
+
+AI-Driven Automation: Future advancements in AI will lead to more sophisticated automation across cloud environments. From self-healing systems to fully autonomous cloud operations, AI will be increasingly used to manage cloud infrastructures, reducing human intervention and ensuring optimal performance with minimal downtime.
+
+Quantum Computing: With the rapid development of quantum computing, AI algorithms running on cloud platforms could potentially leverage quantum processors to solve complex problems at unprecedented speeds. This could drastically enhance machine learning models and optimization tasks that currently take significant computational resources and time.
+
+Augmented Reality (AR) and Virtual Reality (VR) Integration: AI-cloud integration will play a key role in the growth of AR and VR technologies. By combining AI models with cloud platforms, immersive experiences can be created in industries such as gaming, healthcare, and education, enabling real-time processing and interactive simulations on a large scale.
+
+AI for Cloud Security: As cybersecurity threats continue to evolve, AI will play an increasingly important role in enhancing cloud security. AI-driven tools will help detect vulnerabilities, predict potential threats, and automate responses to security breaches in real time, ensuring a more robust defense against cyber-attacks.
+
+Improved Data Governance and Compliance: As data privacy and regulatory requirements become more stringent, AI-powered cloud platforms will provide enhanced data governance tools to ensure compliance with ever-changing global regulations. This will enable businesses to maintain transparency, accountability, and trust in their AI and cloud solutions.
+
+AI for Sustainable Computing: As sustainability becomes a growing concern, AI can help optimize cloud resources to reduce energy consumption and minimize the carbon footprint of cloud operations. AI can help manage energy-efficient resource allocation, ensuring that cloud platforms are both high-performing and environmentally responsible.
+
+The integration of these technologies promises to redefine how businesses use AI and cloud computing, creating more intelligent, adaptable, and sustainable systems. With continued advancements in AI, cloud platforms will become even more capable of handling complex, large-scale operations, offering new opportunities for innovation and growth.
+
+
+
+REFERENCES
+
+
+
+
+
+ Karthik Allam, "Adoption of Artificial Intelligence in Cloud Computing, " International Journal of Computer Trends and Technology, vol. 71, no. 6, pp. 91-95, 2023. Crossref, https://doi.org/10.14445/22312803/IJCTT-V71I6P116.
+
+
+
+Nama, Prathyusha. (2022). Integrating AI with cloud computing: A framework for scalable and intelligent data processing in distributed environments. International Journal of Science and Research Archive. 6. 280-291. 10.30574/ijsra.2022.6.2.0119
+
+
+
+Kirupa, Pandi & Pandian, Gopalakrishna & Sharma, Sourabh. (2024). International Journal of INTELLIGENT SYSTEMS AND APPLICATIONS IN ENGINEERING Integration of Cloud Computing, Artificial Intelligence, and Machine Learning for Enhanced Data Analytics 1. 12. 11–20.
+
+
+
+Tareen, Gibran. (2023). Using Artificial Intelligence with Cloud Computing: Methodologies and                                                                        Implementation. 10.13140/RG.2.2.31040.92160
+
+
+
+
+
+
+
+
+
+
+
