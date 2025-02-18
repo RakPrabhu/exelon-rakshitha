@@ -1,72 +1,108 @@
 import puppeteer from 'puppeteer';
-import socketIoClient from 'socket.io-client';
+import io from 'socket.io-client';
 
-interface MatchDetails {
-  overs: string;
-  score: string;
-  runs: string;
-  wickets: string;
-}
-
-const socket = socketIoClient('http://localhost:3000');
+// Connect to WebSocket server
+const socket = io('http://localhost:3000');
 
 async function scrapeScores() {
-  const browser = await puppeteer.launch();
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
-  await page.goto('https://www.espncricinfo.com/series/ranji-trophy-2024-25-1445824/gujarat-vs-kerala-1st-semi-final-1445954/live-cricket-score', { waitUntil: 'domcontentloaded' });
+  // Navigate to the match page
+  await page.goto('https://www.espncricinfo.com/series/ranji-trophy-2024-25-1445824/gujarat-vs-kerala-1st-semi-final-1445954/live-cricket-score', { 
+    waitUntil: 'networkidle2' 
+  });
 
-  // Wait for the element containing the overs and score
-  await page.waitForSelector('.ds-text-compact-m.ds-text-typo');
+  await page.waitForSelector('table.ds-w-full.ds-table');
 
   const fetchMatchDetails = async () => {
     const matchDetails = await page.evaluate(() => {
-      const oversElement = document.querySelector('.ds-text-compact-xs.ds-mr-0\\.5'); // Fixed selector for overs element
-      const scoreElement = document.querySelector('.ds-text-compact-m.ds-text-typo.ds-text-right');
-
-      const oversText = oversElement && oversElement.textContent ? oversElement.textContent.trim() : 'N/A';
-      const scoreText = scoreElement && scoreElement.textContent ? scoreElement.textContent.trim() : 'N/A';
-
-      // Debugging: print out the actual text of the overs and score
-      console.log('Overs Text:', oversText);
-      console.log('Score Text:', scoreText);
-
-      // Match the overs value (e.g., "88.5 ov") and remove any surrounding parentheses
-      const oversMatch = oversText.match(/\(?(\d+(\.\d+)?)\s*ov\)?/);  // Allow for parentheses around overs
-
-      // Extract score using regex (e.g., "206/4")
-      const scoreMatch = scoreText.match(/(\d+\/\d+)/);  // Match score pattern
-
-      const overs = oversMatch ? oversMatch[1] : 'N/A';  // Get the overs value, or 'N/A' if not found
-
-      // If the score is in the format "runs/wickets", split it into runs and wickets
-      let runs = 'N/A';
-      let wickets = 'N/A';
-
-      if (scoreMatch) {
-        const scoreParts = scoreMatch[1].split('/'); // Split the score into runs and wickets
-        runs = scoreParts[0]; // Runs are the first part
-        wickets = scoreParts[1]; // Wickets are the second part
+      const batters = [];
+      const bowlers = [];
+  
+      // Get all tables with the correct class
+      const tables = document.querySelectorAll('table.ds-w-full.ds-table');
+  
+      // Identify batting tables (look for "Batters" in headers)
+      const batterTables = [];
+      for (const table of tables) {
+        const headers = table.querySelectorAll('th');
+        for (const header of headers) {
+          if (header.textContent && header.textContent.includes('Batters')) {
+            batterTables.push(table); // Add table if header contains "Batters"
+            break;
+          }
+        }
       }
-
-      return { overs, score: scoreMatch ? scoreMatch[1] : 'N/A', runs, wickets };
+  
+      // Process batters from all batting tables
+      for (const batterTable of batterTables) {
+        const rows = batterTable.querySelectorAll('tbody tr');
+        for (const row of rows) {
+          if (row.classList.contains('ds-hidden') || row.querySelector('th')) continue;
+  
+          const columns = row.querySelectorAll('td');
+          if (columns.length >= 3) {
+            const nameCell = columns[0];
+            if (!nameCell) continue;
+  
+            const nameElement = nameCell.querySelector('a span');
+            if (!nameElement) continue;
+  
+            const name = nameElement.textContent?.trim() || 'N/A';
+            const styleElement = nameCell.querySelector('span.ds-text-tight-s.ds-font-regular');
+            const style = styleElement ? ` (${styleElement.textContent?.trim() || ''})` : '';
+  
+            const runsText = columns[1]?.textContent?.trim() || '0';
+            const ballsText = columns[2]?.textContent?.trim() || '0';
+  
+            const runs = parseInt(runsText) || 0;
+            const balls = parseInt(ballsText) || 0;
+  
+            // Check if player is a batter or bowler based on their style (lhb or rhb)
+            if (name !== 'N/A') {
+              if (style.includes('lhb') || style.includes('rhb')) {
+                console.log(`Adding batter: ${name}, Runs: ${runs}, Balls: ${balls}`); // Debug log
+                batters.push({
+                  name: `${name}${style}`,
+                  runs,
+                  balls
+                });
+              } else {
+                console.log(`Adding bowler: ${name}, Overs: ${runsText}, Wickets: ${ballsText}`); // Debug log
+                bowlers.push({
+                  name: `${name}${style}`,
+                  overs: runsText, // Keep overs as a string
+                  maidens: ballsText // Treat wickets as the 3rd column (or whichever column contains wickets)
+                });
+              }
+            }
+          }
+        }
+      }
+  
+      // Deduplication and validation
+      // Ensure no player appears in both arrays
+      const batterNames = new Set(batters.map(b => b.name));
+      const filteredBowlers = bowlers.filter(bowler => !batterNames.has(bowler.name));
+  
+      return { batters, bowlers: filteredBowlers };
     });
-
-    console.log('Overs:', matchDetails.overs);  // Ensure you log the overs
-    console.log('Score:', matchDetails.score);
-    console.log('Runs:', matchDetails.runs);
-    console.log('Wickets:', matchDetails.wickets);
+    console.log('Sending match details:', matchDetails);
+    socket.emit('SCORE_UPDATE', matchDetails);
   };
+  
 
-  // Fetch the match details initially
   await fetchMatchDetails();
-
-  // Set an interval to fetch match details every 15 seconds
-  setInterval(fetchMatchDetails, 15000); // 15000ms = 15 seconds
-
-  // Uncomment to stop the browser after a specific time (e.g., 1 minute)
-  // setTimeout(() => browser.close(), 60000);  // Close browser after 1 minute
+  setInterval(fetchMatchDetails, 15000); // Update every 15 seconds
+  
+  // Cleanup function
+  process.on('SIGINT', async () => {
+    await browser.close();
+    process.exit();
+  });
 }
 
-// Start the scraping process
-scrapeScores();
+scrapeScores().catch(error => {
+  console.error('Error in scraping script:', error);
+});
