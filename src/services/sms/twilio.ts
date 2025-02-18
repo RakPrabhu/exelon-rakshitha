@@ -8,7 +8,6 @@ const client = twilio(process.env.TWILIO_ACCOUNT_SID!, process.env.TWILIO_AUTH_T
 interface TwilioFunctions {
   sendSMS: (to: string, message: string) => Promise<unknown>;
   sendWhatsApp: (to: string, message: string) => Promise<unknown>;
-  makeCall: (to: string, message: string) => Promise<unknown>;
 }
 
 // **Send SMS via Twilio**
@@ -37,19 +36,6 @@ export const TwilioService: TwilioFunctions = {
       return { success: true, sid: response.sid };
     } catch (error) {
       console.error('Twilio WhatsApp Error:', error);
-      return { success: false, error };
-    }
-  },
-  makeCall: async (to: string, message: string) => {
-    try {
-      const call = await client.calls.create({
-        twiml: `<Response><Say voice="alice" language="en-US">${message}</Say></Response>`, // TwiML response for TTS
-        from: process.env.TWILIO_PHONE_NUMBER!,
-        to,
-      });
-      return { success: true, sid: call.sid };
-    } catch (error) {
-      console.error('Twilio Call Error:', error);
       return { success: false, error };
     }
   },
